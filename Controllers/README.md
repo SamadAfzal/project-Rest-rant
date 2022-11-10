@@ -3,16 +3,6 @@
 
 TBD - SUMMARY
 
-## Tech Usage
-
-**CSS Framework:** Bootstrap
-
-**Stack:** MongoDB, Express, NodeJS
-
-**Server-Side Rendering:** JSX
-
-**Node Modules**: method-override, dotenv, express-react-views
-
 ## Routes
 
 | Method | Path | Purpose |
@@ -60,12 +50,4 @@ TBD
 
 ### Wireframes
 
-TBD
 
-## Notes
-
-Possible bonus ideas:
-
-* Update for comments
-* Aggregate rating for a place
-* Auto-complete state dropdown
