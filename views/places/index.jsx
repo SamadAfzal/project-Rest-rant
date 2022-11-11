@@ -21,4 +21,4 @@ function index (data) {
   }
   
 
-module.expors = index
+module.exports = index
