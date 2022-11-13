@@ -8,6 +8,8 @@ const app = express()
 // Express Settings
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(express.urlencoded({ extended: true }))
+
 
 // Controllers & Routes
 app.use('/places', router)
