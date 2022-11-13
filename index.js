@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 
 // Controllers & Routes
 app.use('/places', router)
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.render('home')
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
 app.get('*', (req, res) => {
     res.render('error404')
 })
+
 
 // Listen for Connections
 app.listen(process.env.PORT)
