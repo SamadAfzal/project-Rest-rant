@@ -14,7 +14,6 @@ app.use(methodOverride('_method'))
 app.use('/places', require('./Controllers/places'))
 
 
-
 // Controllers & Routes
 
 app.use(express.static('public'))

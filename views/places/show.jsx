@@ -2,6 +2,7 @@ const React = require('react')
 const Def = require('../default')
 
 function show (data) {
+
     return (
         <Def>
           <main>
@@ -10,11 +11,11 @@ function show (data) {
                     <h3>Currently Unrated</h3>
                 <h2>Comments</h2>
                 <a href={`/places/${data.id}/edit`} className="btn btn-warning">Edit</a>     
-                <form method="POST" action=""> 
-                <button type="submit" className="btn btn-danger">
-                    Delete
-                </button>
-                </form>     
+                <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 
+                    <button type="submit" className="btn btn-danger">
+                        Delete
+                    </button>
+                </form> 
 
             </main>
         </Def>

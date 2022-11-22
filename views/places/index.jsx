@@ -7,7 +7,6 @@ function index (data) {
     width: "400px",
   };
   let placesFormatted = data.places.map((place) => {
-    console.log(place)
     return (
       <div className="col-sm-6">
         <h2>
@@ -18,13 +17,14 @@ function index (data) {
         <p className="text-center">
           {place.cuisines}
         </p>
-        <img src={place.pic} alt={place.name} style={mystyle}/>
+        <img src={place.pic} alt={place.name} />
         <p className="text-center">
           Located in {place.city}, {place.state}
         </p>
       </div>
     )
   })
+  
   return (
     <Def>
         <main>
